@@ -18,5 +18,5 @@ It has firebase authentication, event announcing functionality, user search, cha
 
 To run it you can type:
 
-### `npm android` 
+### `yarn android` 
  
