@@ -1,0 +1,17 @@
+export enum SYNCING_ENDPOINTS {
+  Email = 'isSyncingEmail',
+  Profile = 'isSyncingProfile',
+  Members = 'isSyncingMembers',
+  Member = 'isSyncingMember',
+  MemberFollowers = 'isSyncingMemberFollowers',
+  MemberFollowing = 'isSyncingMemberFollowing',
+  Image = 'isSyncingImage',
+  Password = 'isSyncingPassword',
+  Location = 'isSyncingLocation',
+  Event = 'isSyncingEvent',
+  Events = 'isSyncingEvents',
+  Main = 'isSyncingMain',
+  Auth = 'isSyncingAuth',
+  Chats = 'isSyncingChats',
+  Chat = 'isSyncingChat',
+}

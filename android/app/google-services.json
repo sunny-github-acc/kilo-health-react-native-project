@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1001508278821",
+    "firebase_url": "https://kilo-dev-18259-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kilo-dev-18259",
+    "storage_bucket": "kilo-dev-18259.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001508278821:android:537569343a27d3c17de5cc",
+        "android_client_info": {
+          "package_name": "com.kiloboilerplate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001508278821-v00fntbmhugrt7tdaemnc644h99e3vv0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kiloboilerplate",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1001508278821-4rhk4stk0r4eitko8nnp685ji7bnkuuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3pPEE_FuNXd6QNsMtHyFlVm6e9BNdY30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001508278821-4rhk4stk0r4eitko8nnp685ji7bnkuuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

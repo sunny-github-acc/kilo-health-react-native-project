@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./src/types"],
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es2020",
+    "baseUrl": "./",
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "lint": {
+          "validProperties": [
+            "aspect-ratio",
+            "border-bottom-end-radius",
+            "border-bottom-start-radius",
+            "elevation",
+            "margin-horizontal",
+            "margin-vertical",
+            "padding-horizontal",
+            "padding-vertical",
+            "resize-mode",
+            "shadow-color",
+            "shadow-offset",
+            "shadow-opacity",
+            "shadow-radius",
+            "tint-color"
+          ]
+        }
+      }
+    ],
+    "paths": {
+      "@api/*": ["src/api/*"],
+      "@assets/*": ["src/assets/*"],
+      "@containers/*": ["src/containers/*"],
+      "@constants/*": ["src/constants/*"],
+      "@components/*": ["src/components/*"],
+      "@config": ["./src/config"],
+      "@routes/*": ["src/routes/*"],
+      "@state/*": ["src/state/*"],
+      "@utils/*": ["src/utils/*"],
+      "@typings/*": ["src/types/*"]
+    },
+    "jsx": "react",
+    "strict": false,
+    "types": [],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "files": ["src/modules.d.ts"]
+}

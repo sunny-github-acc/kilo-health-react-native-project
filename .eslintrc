@@ -1,0 +1,72 @@
+{
+  "extends": [
+    "@kilohealth/eslint-config-rn",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser", // Specifies the ESLint parser
+  "plugins": ["@typescript-eslint"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "legacyDecorators": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "jest": true
+  },
+  "rules": {
+    "object-shorthand": ["off", "always"],
+    "no-lone-blocks": 2,
+    "@typescript-eslint/ban-types": 0,
+    "react/jsx-boolean-value": 0,
+    "no-nested-ternary": 1,
+    "no-multi-spaces": 1,
+    "no-unused-vars": 0,
+    "react/no-unused-prop-types": 0,
+    "react/prop-types": 0,
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/no-non-null-assertion": 2,
+    "@typescript-eslint/no-unused-vars": 1,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0
+  },
+  "globals": {
+    "__DEV__": false,
+    "expect": false,
+    "element": false,
+    "device": false,
+    "by": false,
+    "brand": false,
+    "jest": false,
+    "width": false,
+    "height": false,
+    "hasNotch": false,
+    "isIOS": false,
+    "aspectRatio": false,
+    "isSmallScreen": false,
+    "isSmallHeight": false,
+    "localeId": false,
+    "ReactComponent": false
+  }
+}

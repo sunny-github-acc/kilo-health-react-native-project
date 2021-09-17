@@ -1,0 +1,15 @@
+
+sonarqube:
+  image:
+    name: sonarsource/sonar-scanner-cli
+    entrypoint: [""]
+  stage: test
+  only:
+    - master
+  script:
+    - |
+      sonar-scanner -Dsonar.projectKey="${SONARCUBE_PROJECT}" \
+        -Dsonar.sources=. \
+        -Dsonar.host.url="${SONARCUBE_HOST}" \
+        -Dsonar.login="${SONARCUBE_LOGIN}" \
+        -Dsonar.exclusions="**/*.java"

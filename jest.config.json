@@ -1,0 +1,21 @@
+{
+  "preset": "react-native",
+  "collectCoverage": true,
+  "testRegex": "__tests__/.*\\.test\\.(js|jsx)$",
+  "coverageReporters": ["json-summary", "text", "lcov"],
+  "moduleDirectories": ["node_modules", "src"],
+  "setupFiles": ["<rootDir>/__tests__/setup.js"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(jest-)?react-native|react-navigation|react-clone-referenced-element)"
+  ],
+  "coveragePathIgnorePatterns": ["/node_modules/", "/jest"],
+  "globals": {
+    "ENV": "test",
+    "__DEV__": true,
+    "__RCTProfileIsProfiling": false
+  },
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__tests__/mock/RNAssets.js"
+  },
+  "snapshotSerializers": ["<rootDir>/node_modules/enzyme-to-json/serializer"]
+}
